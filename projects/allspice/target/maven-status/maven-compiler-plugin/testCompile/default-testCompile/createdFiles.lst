@@ -1,0 +1,6 @@
+com\acuitybrands\aatf\allspice\adminui\FloorSpaceCreationTest.class
+com\acuitybrands\aatf\allspice\adminui\OrganizationDeleteTest.class
+com\acuitybrands\aatf\allspice\adminui\BaseTest.class
+com\acuitybrands\aatf\allspice\adminui\UserCreatePageTest.class
+com\acuitybrands\aatf\allspice\adminui\LoginPageTest.class
+com\acuitybrands\aatf\allspice\adminui\UserAssignmentCreationTest.class

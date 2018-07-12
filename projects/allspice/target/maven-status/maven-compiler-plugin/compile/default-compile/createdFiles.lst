@@ -1,0 +1,7 @@
+com\acuitybrands\aatf\allspice\adminui\UserAssignmentCreationPage.class
+com\acuitybrands\aatf\allspice\adminui\FloorSpaceCreationPage.class
+com\acuitybrands\aatf\allspice\adminui\OrganizationDelete.class
+com\acuitybrands\aatf\allspice\adminui\BasePage.class
+com\acuitybrands\aatf\allspice\adminui\LoginPage.class
+com\acuitybrands\aatf\allspice\adminui\CreateUserPage.class
+com\acuitybrands\aatf\allspice\adminui\PageGenerator.class
