@@ -1,0 +1,15 @@
+{
+"partner":"//*[@id='createNewSite']",
+"user":"/html/body/section/nav-bar/nav/ul/li[3]/div/a",
+"search":"/html/body/section/div/router-view/aside/search-bar/div/input",
+"search_val":"test",
+"sitem":"/html/body/section/div/router-view/aside/ul/li/div/div",
+"assigmnent_nav":"/html/body/section/div/router-view/section/div[1]/ul/li[2]/a",
+"org_nav":"/html/body/section/div/router-view/section/div[2]/router-view/div[1]/ul/li[3]/a",
+"org_name":"/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[1]/div/material-select/div/select/option[6]",
+"app_name":"/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[2]/material-select[1]/div/select/option[2]"
+,"role":"/html/body/section/div/router-view/section/div[2]/router-view/compose[3]/div/div/form/div[2]/material-select[2]/div/select/option[2]"
+,"savebtn":"//button[@id='save' and @au-target-id='293']",
+"message":"/html/body/section/div/router-view/inline-message/div/p",
+//"message_val":""
+}

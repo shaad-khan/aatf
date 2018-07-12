@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15923" started-at="2018-07-12T14:44:58Z" finished-at="2018-07-12T14:45:14Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15923" started-at="2018-07-12T14:44:58Z" finished-at="2018-07-12T14:45:14Z">
+      <class name="com.acuitybrands.aatf.allspice.adminui.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.LoginPageTest@61dc03ce]" name="setup" is-config="true" duration-ms="7139" started-at="2018-07-12T20:14:58Z" finished-at="2018-07-12T20:15:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ValidLoginTest_ValidUserNameValidPassword()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.LoginPageTest@61dc03ce]" name="ValidLoginTest_ValidUserNameValidPassword" duration-ms="8763" started-at="2018-07-12T20:15:05Z" finished-at="2018-07-12T20:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLoginTest_ValidUserNameValidPassword -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.LoginPageTest@61dc03ce]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-12T20:15:14Z" finished-at="2018-07-12T20:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.acuitybrands.aatf.allspice.adminui.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

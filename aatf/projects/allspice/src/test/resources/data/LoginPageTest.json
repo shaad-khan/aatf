@@ -1,0 +1,12 @@
+{  
+   "url":"https://admin.qa.atrius-iot.com",
+   "username":"testqa2@atgqa.onmicrosoft.com",
+   "password":"Jul@2018",
+   "usertxtlid":"//*[@id='i0116']",
+   "userErrorMsg":"//*[@id='usernameError']",
+   "nextbtnid":"//*[@id='idSIButton9']",
+   "passwordtxtid":"//*[@id='i0118']",
+   "passwordErrorMsg":"//*[@id='passwordError']",
+   "ddlpartnerid":"//*[@matcher.bind = \"matcher\"]/option[5]",
+   "savebtnid":"//*[@id=\"save\"]"
+}

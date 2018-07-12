@@ -1,0 +1,15 @@
+{
+"UsersTab":"//*[@au-target-id='17']",
+"btnUserCreate":"//*[@id='createNewUser']",
+"txtFirstName":"//*[@type='text' and @id='givenName']",
+"txtLastName":"//*[@type='text' and @id='surname']",
+"txtEmail":"//*[@type='text' and @id='email']",
+"txtUserName":"//*[@type='text' and @id='userName']",
+"btnSaveUser":"//*[@id='save' and @au-target-id='135']",
+
+"FirstName":"TestRG2",
+"LastName":"TestRG",
+"Email":"rbnew2@gmail.com",
+"UserName":"TestRGNew2"
+
+}
