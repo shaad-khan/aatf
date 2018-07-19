@@ -1,0 +1,13 @@
+{
+"SitesTab":"//*[@au-target-id='15']",
+"SiteGroupsTab":"//*[@au-target-id='16']",
+"UsersTab":"//*[@au-target-id='17']",
+"FixturesTab":"//*[@au-target-id='19']",
+"SettingsTab":"//*[@au-target-id='21']",
+
+"SitesTabURL":"https://admin.qa.atrius-iot.com/sites/detail",
+"SiteGroupsTabURL":"https://admin.qa.atrius-iot.com/site-groups/detail",
+"UsersTabURL":"https://admin.qa.atrius-iot.com/users/detail",
+"FixturesTabURL":"https://admin.qa.atrius-iot.com/lights/detail",
+"SettingsTabURL":"https://admin.qa.atrius-iot.com/partners/orgs"
+}

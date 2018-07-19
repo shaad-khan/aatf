@@ -1,0 +1,20 @@
+{
+"SitesLink":"//*[@au-target-id='15']",
+"SiteName":"Test2_Site",
+"Maptab":"//*[@au-target-id='108']",
+"BuildingTab":"//*[@au-target-id='181']",
+"btnCreateNewBuilding":"//*[@au-target-id='215']",
+"btnOk":"//*[@id='save' and @au-target-id='71']",
+"PartnerName":"//*[@au-target-id='2']",
+"TestSite":"//*[@au-target-id='93']",
+"SitesUlList":"//*[@au-target-id='92']",
+"txtBuildingName":"//*[@au-target-id='124']",
+"newBuildingName":"TestBuilding",
+"btnBuildingSave":"//*[@au-target-id='243']",
+"searchBuildingField":"//*[@au-target-id='75']",
+"buildingSearchCell": "//*[@class=\"tbl\"]/table/tbody/tr[3]/td[2]]",
+"message":"html/body/section/div/router-view/inline-message/div/p",
+"lstSites":"/html/body/section/div/router-view/aside/ul/li",
+"lastSite":"/html/body/section/div/router-view/aside/ul/li[10]/div/div/h1",
+"ErrorMsgAlert":"//*[@class='au-target inline-message error']"
+}

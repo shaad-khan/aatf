@@ -23,18 +23,21 @@ public class LoginPage extends BasePage {
 	}
 
 	// *********Page Objects*********
+	
 	JsonParser jsonObj = new JsonParser();
-	WebDriverWait wait = ExplicitWait(driver, 20);
+	WebDriverWait wait = ExplicitWait(driver, 5);
 
 	// *********Page Variables*********
-	//String loginPageJson = "src/test/resources/data/LoginPageTest.json";
-	String baseURL = jsonObj.ParseJson(AdminUIConstants.loginpageJson, "url").toString();
 	
+	String loginPageJson = AdminUIConstants.ResourcesPath + new Object(){}.getClass().getEnclosingClass().getSimpleName() +"Test" +".json";
 
+	
 	// *********Page Methods*********
 	// Go to Homepage
-	public void GotoAdminUI() {
-
+	public void GotoAdminUI() {		
+		
+		//String Tet = new Object().getClass().getEnclosingClass().getName();
+		String baseURL = jsonObj.ParseJson(loginPageJson, "url").toString();
 		driver.get(baseURL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Assert.assertEquals(driver.getTitle(), "Admin", "Check Connection/URL.");
@@ -44,36 +47,43 @@ public class LoginPage extends BasePage {
 	public void LoginToAdminUI(String username, String password) {
 
 		try {
-			// Explicit Object
-
+			
 			// Entering user's email id			
-			WriteTextInToWebElement("usertxtlid",AdminUIConstants.loginpageJson, username,5,"Email Textbox");	
+			WriteTextInToWebElement("usertxtlid",loginPageJson, username,5,"Email Textbox");	
 			
 			// Clicking on next button to enter user password
-			ClickWebElement("nextbtnid",AdminUIConstants.loginpageJson,5);
+			ClickWebElement("nextbtnid",loginPageJson,5);
 			
 			//CheckErrorMessage("userErrorMsg",AdminUIConstants.loginpageJson);			
 			
 			// Entering user's password
-			WriteTextInToWebElement("passwordtxtid",AdminUIConstants.loginpageJson, password,10,"Password Textbox");
+			WriteTextInToWebElement("passwordtxtid",loginPageJson, password,10,"Password Textbox");
 
 			// Clicking on next button to login to AdminUI
-			ClickWebElement("nextbtnid",AdminUIConstants.loginpageJson,5);
+			ClickWebElement("nextbtnid",loginPageJson,5);
 
 			//CheckErrorMessage("passwordErrorMsg",AdminUIConstants.loginpageJson);
 			
 			// Clicking on "Yes" to make the user "Stay signed in" on the browser 
-			ClickWebElement("nextbtnid",AdminUIConstants.loginpageJson,5);
+			ClickWebElement("nextbtnid",loginPageJson,5);
 
 			// Explicit wait to select the partner drop down is available and selecting "_QA_ATG_Atrius" 
-			ClickWebElement("ddlpartnerid",AdminUIConstants.loginpageJson,30);
-
+			ClickWebElement("ddlpartnerid",loginPageJson,10);
+			
 			// Clicking on Save button to transfer the user to the home page 
-			ClickWebElement("savebtnid",AdminUIConstants.loginpageJson,30);
+			ClickWebElement("savebtnid",loginPageJson,5);
+			
+			// Explicit wait to select the Environment drop down is available and selecting "Acuity QA US" 
+			ClickWebElement("ddlEnvironmentid",loginPageJson,10);
+			
+			// Clicking on Save button to transfer the user to the home page 
+			ClickWebElement("savebtnid",loginPageJson,5);
+
+			
 
 			/*wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder=\"Search for site...\"]")))
 					.click();*/
-            System.out.println(driver.getTitle());
+
 			Assert.assertEquals(driver.getTitle(), "Detail | Sites | Acuity IPS Admin","Page Title not matched");
 			
 		} catch (Exception e) {
@@ -90,7 +100,5 @@ public class LoginPage extends BasePage {
 	// Verify Password Condition
 	public void VerifyLoginPassword(String expectedText) {
 		// Assert.assertEquals(readText(errorMessagePassword), expectedText);
-	}
-
-	
+	}	
 }

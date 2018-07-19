@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10797" started-at="2018-07-12T21:44:33Z" finished-at="2018-07-12T21:44:44Z">
+  <suite name="Suite" duration-ms="75695" started-at="2018-07-19T17:49:07Z" finished-at="2018-07-19T17:50:23Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10797" started-at="2018-07-12T21:44:33Z" finished-at="2018-07-12T21:44:44Z">
-      <class name="com.acuitybrands.aatf.allspice.adminui.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.LoginPageTest@50f8360d]" name="setup" is-config="true" duration-ms="5424" started-at="2018-07-13T03:14:33Z" finished-at="2018-07-13T03:14:39Z">
+    <test name="Test" duration-ms="16" started-at="2018-07-19T17:49:07Z" finished-at="2018-07-19T17:49:07Z">
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="75642" started-at="2018-07-19T17:49:07Z" finished-at="2018-07-19T17:50:23Z">
+      <class name="com.acuitybrands.aatf.allspice.adminui.CreateZonePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.CreateZonePageTest@7f560810]" name="setup" is-config="true" duration-ms="50398" started-at="2018-07-19T17:49:07Z" finished-at="2018-07-19T17:49:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ValidLoginTest_ValidUserNameValidPassword()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.LoginPageTest@50f8360d]" name="ValidLoginTest_ValidUserNameValidPassword" duration-ms="5355" started-at="2018-07-13T03:14:39Z" finished-at="2018-07-13T03:14:44Z">
+        <test-method status="PASS" signature="CreateZone()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.CreateZonePageTest@7f560810]" name="CreateZone" duration-ms="24492" started-at="2018-07-19T17:49:58Z" finished-at="2018-07-19T17:50:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidLoginTest_ValidUserNameValidPassword -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.LoginPageTest@50f8360d]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-13T03:14:44Z" finished-at="2018-07-13T03:14:44Z">
+        </test-method> <!-- CreateZone -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.acuitybrands.aatf.allspice.adminui.CreateZonePageTest@7f560810]" name="teardown" is-config="true" duration-ms="696" started-at="2018-07-19T17:50:22Z" finished-at="2018-07-19T17:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.acuitybrands.aatf.allspice.adminui.LoginPageTest -->
-    </test> <!-- Test -->
+      </class> <!-- com.acuitybrands.aatf.allspice.adminui.CreateZonePageTest -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

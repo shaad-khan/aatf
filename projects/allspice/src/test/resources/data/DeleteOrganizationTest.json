@@ -1,0 +1,9 @@
+{
+"settingsTab":"//*[@au-target-id='22']",
+"divOrg":"//*[@au-target-id='28']", 
+"ddlOrg":"//*[@id=\"orgSelectorMenu\"]/ul/li/span[text()='test']",
+"btnOrgDelete":"/html/body/section/div/router-view/section/div[2]/router-view/div[1]/button[1]",
+"lnkYesPlease":"/html/body/section/div/router-view/section/div[2]/router-view/inline-confirmation/div/div/p/span/a[2]",
+"lblMessage":"/html/body/section/div/router-view/inline-message/div/p",
+"ddlOgnSelete":"bumpr"
+}

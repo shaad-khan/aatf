@@ -3,12 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.acuitybrands.aatf.allspice.adminui.UserAssignmentCreationTest">
+      <class name="com.acuitybrands.aatf.allspice.adminui.CreateBuildingPageTest">
         <methods>
-          <include name="UserAssignmentCreate"/>
+          <include name="CreateBuilding"/>
+          <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.acuitybrands.aatf.allspice.adminui.UserAssignmentCreationTest -->
+      </class> <!-- com.acuitybrands.aatf.allspice.adminui.CreateBuildingPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

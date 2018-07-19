@@ -1,0 +1,16 @@
+{
+"SitesTab":"//*[@au-target-id='15']",
+"DetailsTab":"//*[@au-target-id='107']",
+"MapTab":"//*[@au-target-id='108']",
+"UsersTab":"//*[@au-target-id='110']",
+"DevicesTab":"//*[@au-target-id='112']",
+"SummaryTab":"//*[@au-target-id='114']",
+"ConfigTab":"//*[@au-target-id='116']",
+
+"DetailsTabURL":"https://admin.qa.atrius-iot.com/sites/detail",
+"MapTabURL":"https://admin.qa.atrius-iot.com/sites/map/location",
+"UsersTabURL":"https://admin.qa.atrius-iot.com/sites/user",
+"DevicesTabURL":"https://admin.qa.atrius-iot.com/sites/device",
+"SummaryTabURL":"https://admin.qa.atrius-iot.com/sites/summary",
+"ConfigTabURL":"https://admin.qa.atrius-iot.com/sites/config/metric"
+}

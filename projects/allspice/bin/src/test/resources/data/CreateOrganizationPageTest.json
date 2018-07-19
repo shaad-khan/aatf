@@ -1,0 +1,23 @@
+{
+"OrganizationTab":"//*[@au-target-id='21']",
+"BtnAddNew":"//*[@id='new']",
+"BtnSaveOrg":"//*[@id='save' and @au-target-id='191']",
+"txtOrgName":"//*[@type='text' and @id='organizationName']",
+"txtOrgUUID":"//*[@type='text' and @id='beaconProximityUUID']",
+"txtOrgAddress1":"//*[@type='text' and @id='address1']",
+"txtOrgAddress2":"//*[@type='text' and @id='address2']",
+"txtOrgCity":"//*[@type='text' and @id='city']",
+"txtOrgState":"//*[@type='text' and @id='stateProvince']",
+"txtOrgPostalCode":"//*[@type='text' and @id='postalCode']",
+"txtOrgCountry":"//*[@type='text' and @id='country']",
+"ErrorMsgAlert":"//*[@class='au-target inline-message error']",
+
+"OrgName":"Test Org",
+"OrgUUID":"Test UUID",
+"OrgAddress1":"Address1",
+"OrgAddress2":"Address2",
+"OrgCity":"City",
+"OrgState":"LA",
+"OrgPostalCode":"999999",
+"OrgCountry":"USA"
+}

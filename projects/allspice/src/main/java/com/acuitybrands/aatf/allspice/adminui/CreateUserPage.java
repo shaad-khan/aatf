@@ -1,10 +1,11 @@
 package com.acuitybrands.aatf.allspice.adminui;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.acuitybrands.aatf.helper.allspice.adminui.AdminUIConstants;
 import com.acuitybrands.aatf.helper.allspice.adminui.JsonParser;
@@ -20,38 +21,50 @@ public class CreateUserPage extends BasePage {
 	public WebElement element;
 	public WebDriverWait wait;
 
-	// *********Page Variables*********
-	//String userCreatePageJson = "src/test/resources/data/UserCreatePageTest.json";
+	// *********Page Variables*********	
 
 	public void UserCreation() {
 		try {
+			//CreateUserPage objCreateUserPage = new CreateUserPage(driver);
+			String createUserPageJson = AdminUIConstants.ResourcesPath + new Object(){}.getClass().getEnclosingClass().getSimpleName() +"Test" +".json";
+			
+			//Reading values from Json file to create a test user.
+			String User_FirstName = jsonObj.ParseJson(createUserPageJson, "FirstName") ;
+			String User_LastName = jsonObj.ParseJson(createUserPageJson, "LastName") ;
+			String User_Email = jsonObj.ParseJson(createUserPageJson, "Email") ;
+			String User_UserName = jsonObj.ParseJson(createUserPageJson, "UserName") ;
+			String ErrorMsgXpath = jsonObj.ParseJson(createUserPageJson, "ErrorMsgAlert") ;
+			
 			// Explicit Object
 			// wait = explicitWait(driver, 7);
 
-			ClickWebElement("UsersTab", AdminUIConstants.userCreatePageJson, 20);
+			ClickWebElement("UsersTab", createUserPageJson, 20);
 
-			ClickWebElement("btnUserCreate", AdminUIConstants.userCreatePageJson, 20);
+			ClickWebElement("btnUserCreate", createUserPageJson, 20);
 
-			ClickWebElement("txtFirstName", AdminUIConstants.userCreatePageJson, 5);
+			ClickWebElement("txtFirstName", createUserPageJson, 20);
+			ClearWebElement("txtFirstName",createUserPageJson, 20);
+			WriteTextInToWebElement("txtFirstName", createUserPageJson, User_FirstName, 20);
 
-			WriteTextInToWebElement("txtFirstName", AdminUIConstants.userCreatePageJson, "FirstName", 5);
+			ClickWebElement("txtLastName", createUserPageJson, 20);
+			ClearWebElement("txtLastName",createUserPageJson, 20);
+			WriteTextInToWebElement("txtLastName", createUserPageJson, User_LastName, 20);
 
-			ClearWebElement("txtLastName", AdminUIConstants.userCreatePageJson, 5);
+			ClickWebElement("txtEmail", createUserPageJson, 20);
+			ClearWebElement("txtEmail", createUserPageJson, 20);
+			WriteTextInToWebElement("txtEmail", createUserPageJson, User_Email, 20);
 
-			WriteTextInToWebElement("txtLastName", AdminUIConstants.userCreatePageJson, "LastName", 5);
+			ClickWebElement("txtUserName", createUserPageJson, 20);
+			ClearWebElement("txtUserName", createUserPageJson, 20);
+			WriteTextInToWebElement("txtUserName", createUserPageJson, User_UserName, 20);
 
-			ClearWebElement("txtEmail", AdminUIConstants.userCreatePageJson, 5);
+			ClickWebElement("btnSaveUser", createUserPageJson, 20);
 
-			WriteTextInToWebElement("txtEmail", AdminUIConstants.userCreatePageJson, "Email", 5);
-
-			ClearWebElement("txtUserName", AdminUIConstants.userCreatePageJson, 5);
-
-			WriteTextInToWebElement("txtUserName", AdminUIConstants.userCreatePageJson, "UserName", 5);
-
-			ClickWebElement("btnSaveUser", AdminUIConstants.userCreatePageJson, 20);
-
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder=\"Search for site...\"]")))
-					.click();
+			//Checking for error message
+			if(CheckForErrorMessage(ErrorMsgXpath, 20))
+			{
+				Assert.fail("Failed to create new User.");
+			}
 		} 
 		catch (Exception ex) 
 		{

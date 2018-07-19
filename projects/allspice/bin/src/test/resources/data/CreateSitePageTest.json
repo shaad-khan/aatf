@@ -1,0 +1,15 @@
+{  
+   	"createSiteId":".//*[@id='createNewSite']",
+   	"siteNameId":"//div[contains(@class, \"modal-box\")]//input[@id=\"siteNameInput\"]",
+   	"siteName":"Test2_Site",
+   	"btnNext1Id":"//div[contains(@class, \"modal-box\")]//button[@id=\"nextStep\"]",
+	"btnNext2Id":"//div[contains(@class, \"modal-box\")]//button[@id=\"nextStep\" and contains(@au-target-id, \"202\")]",
+	"BuildingNameId":"//div[contains(@class, \"modal-box\")]//input[@id=\"name\"]",
+   	"BuildingName":"Test2_Building",
+ 	"btnNext3Id":"//div[contains(@class, \"modal-box\")]//button[@id=\"nextStep\" and contains(@au-target-id, \"205\")]",
+   	"FloorNameId":"//div[contains(@class, \"modal-box\")]//input[@id=\"name\"]",
+   	"FloorName":"Test2_Floor",
+ 	"btnNext4Id":"//div[contains(@class, \"modal-box\")]//button[@id=\"nextStep\" and contains(@au-target-id, \"208\")]",
+   	"message":"html/body/section/div/router-view/inline-message/div/p",
+   	"successMessage":"All done. Nice job!"
+}

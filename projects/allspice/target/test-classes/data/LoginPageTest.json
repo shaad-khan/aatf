@@ -7,6 +7,7 @@
    "nextbtnid":"//*[@id='idSIButton9']",
    "passwordtxtid":"//*[@id='i0118']",
    "passwordErrorMsg":"//*[@id='passwordError']",
-   "ddlpartnerid":"//*[@matcher.bind = \"matcher\"]/option[5]",
+   "ddlpartnerid":"//*[@matcher.bind = \"matcher\"]/option[4]",
+   "ddlEnvironmentid":"//*[@matcher.bind = \"matcher\"]/option[2]",
    "savebtnid":"//*[@id=\"save\"]"
 }
